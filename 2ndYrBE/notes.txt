@@ -1,0 +1,51 @@
+
+put "powerpoint" section under "course content"
+put "contact info" section under "about me"
+
+add transition for site_header to move further off screen so that it doesn't
+peak in while the text wraps around. So move fixed menu, but also move site_header!
+Workaround by having text shrink with viewport width as window minimizes as webpage enters popup mode
+
+
+
+at first, without any scrolling, keep the sidebar and the header as part of the document. Then, as the header disappears, make the sidebar fixed!!!?!?!
+
+
+<!--Content to Add to Website-->
+Home
+List of vocab words for next class period
+key things we learned from previous class
+
+Course Content
+Powerpoint's for each week that we have already covered
+Upcoming topics
+
+Points?
+Grading system
+most recent "quests"
+
+About Me
+After graduating from Grinnell College with degrees in Music and Physics, Anthony (Tony) entered the Peace Corps where he serves as a volunteer of the 25th cohort in China teaching Oral English. His academic interests include the gamification of learning and exploring different approaches to making education more diverse and inclusive. As such, he is an avid learner who is open to new ideas and hopes to continually expand his skillset to gain new perspectives on the field of education. 
+
+His hobbies mainly include video games, animation, music, and cooking. Most recently, he can be found playing Persona 3 and games from the Fire Emblem series, watching Violet Evergarden, and listening to the soundtrack and songs of the RWBY series. 
+
+
+Faq's
+S: Teacher, how can I improve my English?
+T: Well, it is very difficult for anyone to improve their English not only because of the many elements that comprise the English language, but also because of the fact that language is an ever-changing phenomena! Therefore, we should first consider what English skills we want to improve on; For example, it could be speaking or listening. But how we practice these aspects of English is also heavily affected by what our final goal is for improving that certain aspect. In order to create a suitable strategy for improving our English, I suggest we think about the following questions:
+"What English skills do I want to improve on?"
+"Why do I want to improve on these English skills?" or "What do I want to be able to do with these English skills?" 
+
+TL;DR (too long; didn't read)
+English is hard and there are too many things to learn. So, identify what we want to do with English first, because what we want to do will change how we study. 
+
+
+Common English Skills to Improve
+Conversational Speaking
+Conversational Listening
+Recreational Reading
+Recreational Writing
+
+
+
+

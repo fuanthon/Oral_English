@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  </head>
+  <body>
+  <section class="section">
+    <div class="container">
+      <h1 class="title">
+        Hello World
+      </h1>
+      <p class="subtitle">
+        My first website with <strong>Bulma</strong>!
+      </p>
+    </div>
+  </section>
+      
+      
+      <script>
+          fetch('test.txt').then(function(response) {
+    if (response.status !== 200) {
+        throw response.status;
+    }
+    return response.text();
+}).then(function(file_content) {
+    console.log(file_content);
+}).catch(function(status) {
+    console.log('Error ' + status);
+});
+          
+          window.addEventListener('load', function(){
+              var x = document.createElement("IFRAME");
+              x.style.src = "test.txt";
+              x.style.height = "100px";
+              var y = document.getElementById("iframe");
+              console.log(x);
+              y.setAttribute('src', 'what.txt');
+              console.log(y);
+
+          });
+      </script>
+      
+      <iframe id="iframe" src="test.txt"></iframe>
+      <h1 id="header"></h1>
+      
+  </body>
+</html>

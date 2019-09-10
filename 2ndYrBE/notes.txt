@@ -1,4 +1,6 @@
 
+Use AJAX to load webpages instead of reloading each page!!! Especially because Github servers are in the US? and loading times can be slow in China...
+
 put "powerpoint" section under "course content"
 put "contact info" section under "about me"
 
@@ -11,6 +13,14 @@ Workaround by having text shrink with viewport width as window minimizes as webp
 at first, without any scrolling, keep the sidebar and the header as part of the document. Then, as the header disappears, make the sidebar fixed!!!?!?!
 
 
+
+add burger and dropdown menu two mobile version of website 
+
+
+
+
+
+
 <!--Content to Add to Website-->
 Home
 List of vocab words for next class period
@@ -20,14 +30,34 @@ Course Content
 Powerpoint's for each week that we have already covered
 Upcoming topics
 
+
+
+
 Points?
 Grading system
 most recent "quests"
+
+For  2ndYrBE
+Rank C: Watch video that I will post on website, and write a review in either formal or casual English (at least 200 words)
+Rank B: Watch video, and write both formal and casual review (at least words each)
+Rank A: Getting to know you lunch. Have lunch together! I want to get to know all of you!?
+
+Submit to fua21265@yahoo.co.jp with the following format:
+
+2ndYrBE - Name(English and Chinese), Quest#
+failure to follow this format will result in me not grading it and you not receiving any points
+
+
+
+
+
 
 About Me
 After graduating from Grinnell College with degrees in Music and Physics, Anthony (Tony) entered the Peace Corps where he serves as a volunteer of the 25th cohort in China teaching Oral English. His academic interests include the gamification of learning and exploring different approaches to making education more diverse and inclusive. As such, he is an avid learner who is open to new ideas and hopes to continually expand his skillset to gain new perspectives on the field of education. 
 
 His hobbies mainly include video games, animation, music, and cooking. Most recently, he can be found playing Persona 3 and games from the Fire Emblem series, watching Violet Evergarden, and listening to the soundtrack and songs of the RWBY series. 
+
+contact me at my email: fua21265@yahoo.co.jp
 
 
 Faq's
@@ -45,6 +75,53 @@ Conversational Speaking
 Conversational Listening
 Recreational Reading
 Recreational Writing
+
+
+S: Teacher, do you have any recommended tools to use for studying English?
+T: Yes! I myself use the application "Anki," which is a very helpful for memorizing all sorts of things, including vocabulary words. Anki has helped me increased my Chinese and Japanese vocabulary and I highly recommend it!
+
+
+I would also recommend finding a good English book, movie, tv show, or video game to enjoy, which can help with English language immersion. It is a good way to do something you enjoy while learning English! Here are some of my recommendations for media (most of which I grew up with lol):
+
+Books
+Magic Treehouse Series
+Harry Potter Series
+Alex Rider Series
+Warriors Series
+Boxcar Children Series
+etc etc
+
+Movies
+Any Disney Movie
+Any Studio Ghibli Movie
+Any Marvel Movie
+Any DC Comics Movie
+
+TV Show
+Andi Mack
+ICarly
+Jonas Bros
+Wizards of Waverly Place
+Arthur
+Word Girl
+Martha the Talking Dog
+Thomas the Tank Engine
+
+Video Games (should have text, not just gameplay)
+Life is Strange
+Ace Attorney
+Professor Layton
+Animal Crossing
+Visual Novels
+Traditional RPG's
+
+
+If you have any recommendations yourselves, please let me know so that I can add it to this page!
+
+
+Or English translations of anything you enjoy that is not originally in English!
+
+
 
 
 

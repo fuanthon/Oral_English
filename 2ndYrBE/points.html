@@ -1,18 +1,182 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport"
-     content="width=device-width, initial-scale=1, user-scalable=yes">
-
-  <title>Oral English</title>
-</head>
+<html class="has-navbar-fixed-bottom">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>2ndYrBE</title>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    </head>
     
-<body>
-    <!-- Will need to stylize this later so that the text font grows and shrinks with window size. In other words, maintain an aspect ratio-->
-    <div style="text-align:center">  
-       Points
-    </div>
+    <link href="site_theme.css" rel="stylesheet" type="text/css">
+    
+    <script src="script.js">
+    </script>
+    
+    
+    
+    <body>
+        <!--Fixed Header-->
+        <section class="hero is-dark is-small" id="header">
+             <div class="hero-body">
+                <div class="container is-pulled-right">
+                    <h1 class="title is-1" id="oral_english">
+                        Oral English
+                    </h1>
+                    <h2 class="subtitle" id="oral_english_sub">
+                          for 2nd Year Business English Majors
+                    </h2>
+                </div>
+            </div>
+        </section>
+        <!--/Fixed Header-->
 
-</body>
+        <!--Sidebar_Navigationbar-->
+        <div class="section is-marginless is-overlay" id="sidebar_container">
+            <div class="columns is-mobile">
+                <div class="column is-one-fifth sidebar">
+                    <aside class="menu">
+                        <ul class="menu-list">
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="course_content.html">Course Content</a></li>
+                            <li><a class="active" href="points.html">Points</a></li>
+                            <li><a href="about_me.html">About Me</a></li>
+                            <li><a href="faqs.html">FAQs</a></li>
+                            
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+        </div>
+        <!--/Sidebar_Navigationbar-->
+        
+        
+        
+        <!--NavbarforMobile-->
+        <nav class="navbar is-fixed-bottom" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item">
+                    <img src="" width="112" height="28">
+        <!--add a span to cover up stuff? not sure-->
+                </a>
+
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample"> <!-- add is-active to turn into a cross-->
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div class="navbar-menu"> <!--add is-active to display contents-->
+                <div class="navbar-start ">
+                     <a class="navbar-item" href="home.html">
+                        Home
+                    </a>
+
+                    <a class="navbar-item" href="course_content.html">
+                        Course Content
+                    </a>
+        
+                    <a class="navbar-item" href="points.html">
+                        Points
+                    </a>
+                    
+                    <a class="navbar-item" href="about_me.html">
+                        About Me
+                    </a>
+                    
+                    <a class="navbar-item" href="faqs.html">
+                        FAQs
+                    </a>
+
+                </div>
+                <div class="navbar-end">
+                </div>
+            </div>
+        </nav> 
+        
+        <!--/NavbarforMobile-->
+        
+        
+        
+    
+        
+        <!--ContentFormatting-->
+        <div class="section is-paddingless"id="contentformatting">
+            <div class="columns is-mobile is-variable is-8">
+                <div class="column is-one-fifth" id="responsive_indent">
+                </div>
+                <div class="column is-vcentered">
+                <!--Content-->          
+                    
+                    <section class="section">
+                        <div class="container">
+                            <h1 class="title" style="line-height: 1px;">
+                            Active Assignments
+                            </h1>
+                            <hr>
+                            <div class="content">
+                                <h4><u>Rank B</u></h4><p>Watch video that I will post on website, and write both formal and casual review (at least 200 words each)[due 9/18/19]</p>
+                                <h4><u>Rank C</u></h4> <p>Watch video that I will post on website, and write a review in either formal or casual English (at least 200 words)[due 9/18/19]</p>
+                            </div>
+                            
+                            <div style="height:40px"><!--Blank Space--></div>
+                            
+                            
+                            <div class="content">
+                                
+                               <h3 class="title" style="line-height: 1px;">
+                            Points and Grading
+                            </h3> 
+                                <hr>
+                                
+                            Breakdown of Final Grade:
+                                <p style="margin-left:5%">
+                                    50% = Final Exam <br>
+                                    50% = Points <br> <br>
+                                    where: <br>
+                                    900 points = 70% <br>
+                                    1000 points = 80% <br>
+                                    1100 points = 90%<br>
+                                    1200 points = 100%<br>
+                                </p>
+                                <p class="indent justify">The grade that you can obtain from the points is a step function. This means that, for example, you must get at least 900 points to get a 70%. Then to get 80%, you must reach 1000 points, and when you have between 900 and 1000 points, your grade is not affected. </p>
+                                <br>
+                                <h4>How to earn points:</h4>
+                                <p>
+                                    Turning in written work from class activity = calculated out of 50 points<br>
+                                    Turn in homework:<br>
+                                <ul>
+                                    <li>C rank homework = 10 points</li>
+                                    <li>B rank homework = 30 points</li>
+                                    <li>A rank homework = 40 points</li>
+                                    <li>S rank homework = 70 points</li>
+                                </ul>
+                                    </p>
+                                
+                            </div>
+                        </div>
+                    </section>
+                    
+                    
+                    
+                    
+            
+                    
+                    
+                <!--/Content-->   
+                </div>
+                
+            </div>
+        </div>
+        <!--/ContentFormatting-->
+
+
+
+
+
+
+
+    </body>
 </html>

@@ -1,83 +1,43 @@
 
 
-.body{
-    background-image: url("resources/persona.jpg");
-    background-size:cover;
+.indent{
+    text-indent: 30px;
 }
 
-.fixed_menu{
-    position: fixed;
-    margin: 0;
-    top: 0;
-    width: 100vw;
-    left:0px;
-    transition: top 500ms;
+.justify{
+    text-align: justify;
 }
 
 
-.site_header {
-    position: relative; 
-    margin:0;
-    padding-top: 15px;
-    padding-left: 30px;
-    padding-right:20px;
-    padding-bottom: 15px;
-    color: darkblue;
-    width: auto;
-    height: auto;
-    
-    background-color:lightblue;
-    border-radius: 2px;
-    
-    
-    
-    
-    /* -webkit-animation-name: hide_site_header;
-    -webkit-animation-duration: 2s;
-    animation-iteration-count: infinite;*/
-    
-
+#header{
+    text-align: center;
+    padding-right: 10vw;
 }
 
-.fixed_menu.sidebar_hidden{
-    top:-67px;
-}
-.fixed_menu.sidebar_visible{
-    top:0px;
+#sidebar_container{
+    top:131px;
 }
 
-.sidebar.popup{
-    top:0px;
-}
-
-
-       /* The side navigation menu */
 .sidebar {
-    position: relative;
-    /* style.top controlled by javascript*/
-    margin: 0;
-    padding: 0;
     width: 200px;
-    background-color: #F1f1FF;
-    height: 260px;
-    overflow: auto;
-    top: 0px;   
-    border-radius: 3px
+    background-color: #F1f1FF;  
+    border-radius: 20px;
+    margin-left:0;
+    position: relative;
+    top: -20px;
+
 }
 
-/* Sidebar links */
-.sidebar a {
-    display: block;
-    color: black;
-   /* font-size: 3;*/
-    padding: 16px;
-    text-decoration: none;
+.sidebar a { 
+    text-align:center;
+    font-size: 100%;
+    transition: top 1s; /* to smooth out the bumpiness of the transition*/
 }
 
-/* Active/current link */
 .sidebar a.active {
-    background-color: midnightblue;
+    background-color: #363636;
     color: white;
+    //border-radius: 20px;
 }
 
 /* Links on mouse-over */
@@ -86,165 +46,39 @@
     color: white;
 }
 
-
-
-.popup_menu{
-    display:none;
+.fix_sidebar{
+    position: fixed;
+    width: 100%;
 }
 
-.popup_menu_button{
-    display:none;
-    width: 25%;
-    height:100%;
-    margin-left: 38%;
-    background-color: #F1f1FF;
-    border-radius: 30px;
-    font-size:30px;
-    
-}
-
-.bar1, .bar2, .bar3 {
-    width: 50%;
-    height: 5px;
-    background-color: rgb(50,50,25);
-    margin: 6px 0;
-    margin-left: 25%;
-    border-radius: 4px;
-    opacity:0.7
-    
+.navbar{
+    display:none !important;
 }
 
 
-
-/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
-div.content {
-   // position:relative;
-    margin-left: 200px;
-    margin-top: 67px;
-    padding-top: 10px;
-    height: 1500vh;
-    background-color: #F1f1FF;
-    z-index: -2;
-    border-radius: 3px;
-}
-
-
-
-
-
-
-
-/* On screens that are less than 800px wide, make the sidebar into a topbar */
-
-@media screen and (max-width: 800px) {    
-    .site_header {
-        margin: 0;
-        overflow: auto;
-        position: relative;
-        width:auto;
-    }
-    
-    .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
-        /* style.top controlled by javascript*/
-        margin:0;
-    }
-    .sidebar a {
-        float:left;
-        display: inline-block; 
-    }
-    div.content {
-        margin-top: 130px;
-        margin-left: 0px;
-    }
-}
-
-/* adjust fixed_menu hidden top because of header text wrapping*/
-@media screen and (max-width: 747px) {
-    .fixed_menu.sidebar_hidden{
-        top:-104px;
-    }
-    
-    div.content {
-        margin-top: 165px;
-        margin-left: 0px;
-    }
-    
+/*if screen width is smaller than 550px, then switch to popup menu!*/
+@media screen and (max-width: 550px) {   
     .sidebar{
-       // transition: none;
+        display:none;
     }
-    
-    
-}
+    .title{
+        font-size: 6vw;
+    }
+    #oral_english{
+        font-size: 6vw;
+    }
+    #oral_english_sub{
+        font-size:4vw;
+    }
 
+    .navbar{
+    display:block !important;
+    }
 
-
-
-
-@media screen and (max-width: 448px) {
-    div.content {
-        margin-top: 215px;
+    #responsive_indent{
+        display:none;
     }
-}
-
-/*Popup Menu!*/
-@media screen and (max-width: 404px) {
-    .fixed_menu.sidebar_hidden{
-        top:-141px;
-    }
-    .fixed_menu{
-        text-align: center;
-    }
-    .sidebar{
-        display: block;
-        position: relative;
-        margin: 0;
-        padding: 0;
-        background-color: #f1f1f1;
-        overflow: auto;
-        z-index:-1;
-        top:-300px;
-        transition: top 0.5s ease;
-    }
-    .popup_menu{
-        display:block;
-        font-size: 100px;
-        color: white;
-        background-color: #F1f1FF;
-        width: 100%;
-        text-align: center;
-        height:50px;
-    }
-    .sidebar a {
-        float:none;
-        display: block;
-    }
-    
-    .popup_menu_button{/* need to center the menu button!!!!!!*/
-        display:block;        
-    }
-    
-    div.content {
-        margin-top: 202px;
-    }
-}
-
-@media screen and (max-width: 302px) {
-    .fixed_menu.sidebar_hidden{
-        top:-129px;
-    }
-    
-    .site_header{
-        font-size: 10vw;
-        //white-space: nowrap;
-    }
-}
-
-/*
-hmmmmmm don't use iframe because it makes bookmarking impossible*/
-.frame {
 
 }
+
 

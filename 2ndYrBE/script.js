@@ -1,90 +1,45 @@
-
-window.onload = function(){
-    
-    var sidebar = document.getElementsByClassName("sidebar")[0];
-    var sidebar_subpages = sidebar.children;
-    var site_header = document.getElementsByClassName("site_header")[0];
-    var fixed_menu = document.getElementsByClassName("fixed_menu")[0];
-    var popup_menu_button = document.getElementsByClassName("popup_menu_button")[0];
-    
-    site_header.visible = true; //add own show property to determine if site_header is being displayed
-    popup_menu_button.poppedup = false;
-    
-   // site_header.style.transition = "top 600ms";
-   // sidebar.style.transition = "top 600ms";
-
-    site_header.show = (mode)=>{
-        if (mode == "sidebar"){
-        fixed_menu.classList.remove("sidebar_hidden");
-        fixed_menu.classList.add("sidebar_visible");
-        }
-        if (mode == "topbar"){
+ window.onload = function(){
+            var header = document.getElementById("header");
+            var header_height = header.offsetHeight;
+            var sidebar_container = document.getElementById("sidebar_container");
+            var sidebar_mode = "relative";
             
-        }
-    };
-
-    site_header.hide = (mode)=>{
-        if (mode =="sidebar"){
-        fixed_menu.classList.add("sidebar_hidden");
-        fixed_menu.classList.remove("sidebar_visible");
-        }
-        if (mode == "topbar"){
+            //navbar stuff
+            var burger_button = document.querySelector('[role="button"]:last-of-type');
+            var navbar_menu = document.getElementsByClassName("navbar-menu")[0];
             
-        }
-
-        
-        
-          
-    };
-
-    popup_menu_button.popup = ()=>{
-        sidebar.classList.add("popup");
-        popup_menu_button.poppedup = true;
-    };
-    popup_menu_button.close = ()=>{
-        sidebar.classList.remove("popup");
-        popup_menu_button.poppedup = false;
-    };
-    
-    
-    
-    window.addEventListener('document_state_change', function(event){
-       if(event.detail.newstate == "full"){
-           
-       }
-    });
-    
-    
-    popup_menu_button.addEventListener('click', function(){
-        if(popup_menu_button.poppedup){
-            popup_menu_button.close();
-        }else{
-            popup_menu_button.popup();
-        }
-    });
-
-    
-    window.addEventListener('resize', function(){
-        
-    });
-        
-    
-    
-    window.addEventListener('scroll', function(){
-            if (site_header.visible == true && window.scrollY > 50){
-            site_header.hide("sidebar");
-            site_header.visible = false;
-            }
             
-            if (site_header.visible == false && window.scrollY < 50){
-            site_header.show("sidebar");
-            site_header.visible = true;
-            }
-       
-        
+            window.addEventListener('resize',()=>{//updates the header_height when window is resized
+                header_height = header.offsetHeight;
+                if(sidebar_mode=="relative"){
+                    sidebar_container.style.top = String(header_height)+'px';
+                }
             });
-
-
-
-
-};
+            
+            burger_button.addEventListener('click',()=>{//when burger is pressed
+                if(burger_button.classList.contains("is-active")){
+                    burger_button.classList.remove("is-active");
+                    navbar_menu.classList.remove("is-active");
+                }else{
+                    burger_button.classList.add("is-active");
+                    navbar_menu.classList.add("is-active");
+                }
+                
+            });
+            
+            
+            window.addEventListener('scroll',()=>{//do not directly do these changes for every single scroll event because that takes up a lot of resources. Check like maybe once every 3 scroll events or something?
+                var scrollpixels = window.scrollY;
+                if (scrollpixels > header_height && sidebar_mode=="relative"){
+                    sidebar_container.classList.add("fix_sidebar");
+                     sidebar_container.style.top = '0px';
+                    sidebar_mode = "fixed";
+                }else if (scrollpixels < header_height && sidebar_mode=="fixed"){
+                    sidebar_container.classList.remove("fix_sidebar");
+                    sidebar_container.style.top = String(header_height)+'px';
+                    sidebar_mode = "relative";
+                }
+            });
+            
+        };
+        

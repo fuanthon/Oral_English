@@ -1,18 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport"
-     content="width=device-width, initial-scale=1, user-scalable=yes">
-
-  <title>Oral English</title>
-</head>
+<html class="has-navbar-fixed-bottom">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>2ndYrBE</title>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    </head>
     
-<body>
-    <!-- Will need to stylize this later so that the text font grows and shrinks with window size. In other words, maintain an aspect ratio-->
-    <div style="text-align:center">  
-       About Me
-    </div>
+    <link href="site_theme.css" rel="stylesheet" type="text/css">
+    
+    <script src="script.js">
+    </script>
+    
+    
+    
+    <body>
+        <!--Fixed Header-->
+        <section class="hero is-dark is-small" id="header">
+             <div class="hero-body">
+                <div class="container is-pulled-right">
+                    <h1 class="title is-1" id="oral_english">
+                        Oral English
+                    </h1>
+                    <h2 class="subtitle" id="oral_english_sub">
+                          for 2nd Year Business English Majors
+                    </h2>
+                </div>
+            </div>
+        </section>
+        <!--/Fixed Header-->
 
-</body>
+        <!--Sidebar_Navigationbar-->
+        <div class="section is-marginless is-overlay" id="sidebar_container">
+            <div class="columns is-mobile">
+                <div class="column is-one-fifth sidebar">
+                    <aside class="menu">
+                        <ul class="menu-list">
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="course_content.html">Course Content</a></li>
+                            <li><a href="points.html">Points</a></li>
+                            <li><a class="active" href="about_me.html">About Me</a></li>
+                            <li><a href="faqs.html">FAQs</a></li>
+                            
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+        </div>
+        <!--/Sidebar_Navigationbar-->
+        
+        
+        
+        <!--NavbarforMobile-->
+        <nav class="navbar is-fixed-bottom" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item">
+                    <img src="" width="112" height="28">
+        <!--add a span to cover up stuff? not sure-->
+                </a>
+
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample"> <!-- add is-active to turn into a cross-->
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div class="navbar-menu"> <!--add is-active to display contents-->
+                <div class="navbar-start ">
+                     <a class="navbar-item" href="home.html">
+                        Home
+                    </a>
+
+                    <a class="navbar-item" href="course_content.html">
+                        Course Content
+                    </a>
+        
+                    <a class="navbar-item" href="points.html">
+                        Points
+                    </a>
+                    
+                    <a class="navbar-item" href="about_me.html">
+                        About Me
+                    </a>
+                    
+                    <a class="navbar-item" href="faqs.html">
+                        FAQs
+                    </a>
+                </div>
+                <div class="navbar-end">
+                </div>
+            </div>
+        </nav> 
+        
+        <!--/NavbarforMobile-->
+        
+        
+        
+    
+        
+        <!--ContentFormatting-->
+        <div class="section is-paddingless"id="contentformatting">
+            <div class="columns is-mobile is-variable is-8">
+                <div class="column is-one-fifth" id="responsive_indent">
+                </div>
+                <div class="column is-vcentered">
+                <!--Content-->          
+                    
+                    
+                    <section class="section">
+                        <div class="container">
+                            <h1 class="title" style="line-height: 1px;">
+                            About Me
+                            </h1>
+                            <hr>
+                            
+                            <figure class="image is-flex" style="justify-content: center">
+                                <img src="resources/me.jpg" alt="ME?!" style="width:30vw; "></figure>
+                            
+                            
+                            <br>
+                            
+                            <div class="content">
+                                <p class="indent justify">After graduating from Grinnell College with degrees in Music and Physics, Anthony (Tony) entered the Peace Corps where he serves as a volunteer of the 25th cohort in China teaching Oral English. His academic interests include the gamification of learning and exploring different approaches to making education more diverse and inclusive. As such, he is an avid learner who is open to new ideas and hopes to continually expand his skillset to gain new perspectives on the field of education. 
+                                </p>
+                                
+                                <p class="indent">His hobbies mainly include video games, animation, music, and cooking. Most recently, he can be found playing Persona 3 and games from the Fire Emblem series, watching Violet Evergarden, and listening to the soundtrack and songs of the RWBY series. 
+                                </p>
+                                <p>contact me at my email: <strong>fua21265@yahoo.co.jp</strong></p>
+                                
+                            
+                            
+                            </div>
+                        </div>
+                    </section>
+                    
+                    
+                    
+                    
+            
+                    
+                    
+                <!--/Content-->   
+                </div>
+                
+            </div>
+        </div>
+        <!--/ContentFormatting-->
+
+
+
+
+
+
+
+    </body>
 </html>

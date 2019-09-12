@@ -59,7 +59,7 @@
 /*if screen width is smaller than 550px, then switch to popup menu!*/
 @media screen and (max-width: 550px) {   
     .sidebar{
-        display:none;
+        display:none !important;
     }
     .title{
         font-size: 6vw;

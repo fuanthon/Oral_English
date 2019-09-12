@@ -30,7 +30,8 @@
             
             window.addEventListener('scroll',()=>{//do not directly do these changes for every single scroll event because that takes up a lot of resources. Check like maybe once every 3 scroll events or something?
                 var scrollpixels = window.scrollY;
-                if (scrollpixels > header_height && sidebar_mode=="relative"){
+                if(window.innerHeight > 550){
+                    if (scrollpixels > header_height && sidebar_mode=="relative"){
                     sidebar_container.classList.add("fix_sidebar");
                      sidebar_container.style.top = '0px';
                     sidebar_mode = "fixed";
@@ -39,6 +40,8 @@
                     sidebar_container.style.top = String(header_height)+'px';
                     sidebar_mode = "relative";
                 }
+                   }
+               
             });
             
         };

@@ -1,5 +1,14 @@
 
+Put the schedule as a link instead of an iframe 
+schedule, powerpoint, "course content," expectations, etc should have its own submenu options on page
+Potentially change Points page name to Assignments?
+Home under announcements put things we're doing next week and new vocab
+Student login to see grade/points/progress thing
+
 Use AJAX to load webpages instead of reloading each page!!! Especially because Github servers are in the US? and loading times can be slow in China...
+
+
+
 
 put "powerpoint" section under "course content"
 put "contact info" section under "about me"

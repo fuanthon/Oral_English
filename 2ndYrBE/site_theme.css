@@ -8,59 +8,8 @@
     text-align: justify;
 }
 
-
-#header{
-    text-align: center;
-    padding-right: 10vw;
-}
-
-#sidebar_container{
-    top:131px;
-}
-
-.sidebar {
-    width: 200px;
-    background-color: #F1f1FF;  
-    border-radius: 20px;
-    margin-left:0;
-    position: relative;
-    top: -20px;
-
-}
-
-.sidebar a { 
-    text-align:center;
-    font-size: 100%;
-    transition: top 1s; /* to smooth out the bumpiness of the transition*/
-}
-
-.sidebar a.active {
-    background-color: #363636;
-    color: white;
-    //border-radius: 20px;
-}
-
-/* Links on mouse-over */
-.sidebar a:hover:not(.active) {
-    background-color: #555;
-    color: white;
-}
-
-.fix_sidebar{
-    position: fixed;
-    width: 100%;
-}
-
-.navbar{
-    display:none !important;
-}
-
-
 /*if screen width is smaller than 550px, then switch to popup menu!*/
 @media screen and (max-width: 550px) {   
-    .sidebar{
-        display:none !important;
-    }
     .title{
         font-size: 6vw;
     }
@@ -70,15 +19,6 @@
     #oral_english_sub{
         font-size:4vw;
     }
-
-    .navbar{
-    display:block !important;
-    }
-
-    #responsive_indent{
-        display:none;
-    }
-
 }
 
 

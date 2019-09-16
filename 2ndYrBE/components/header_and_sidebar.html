@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!--#include file="header_and_sidebar.html" -->
+
+    <template>
+        
+    <!--Fixed Header-->
+    <section class="hero is-dark is-small" id="header">
+         <div class="hero-body">
+            <div class="container is-pulled-right">
+                <h1 class="title is-1" id="oral_english">
+                    Oral English
+                </h1>
+                <h2 class="subtitle" id="oral_english_sub">
+                      for 2nd Year Business English Majors
+                </h2>
+            </div>
+        </div>
+    </section>
+    <!--/Fixed Header-->
+
+
+
+
+
+    <!--ContentFormatting-->
+    <div class="section" id="contentformatting">
+        <div class="columns is-mobile is-variable">
+
+            <!--Sidebar_Navigationbar-->
+            <div class="column is-one-fifth">
+                <div class="section is-marginless is-overlay" id="sidebar_container">
+                    <aside class="menu sidebar">
+                    <ul class="menu-list">
+                        <li><a href="home.html" id="/home.html">Home</a></li>
+                        <li><a href="course-content.html" id="/course-content.html">Course Content</a></li>
+                        <li><a href="points.html" id="/points.html">Points</a></li>
+                        <li><a href="about-me.html" id="/about-me.html">About Me</a></li>
+                        <li><a href="faqs.html" id="/faqs.html">FAQs</a></li>
+
+                    </ul>
+                </aside>
+                </div>
+            </div>
+            <!--/Sidebar_Navigationbar-->
+
+
+            <div class="column is-vcentered" id="content_column">
+            <!--Content-->  
+                <!--Content here will be added dynamically through Javascript!-->
+            <!--/Content-->   
+            </div>
+
+        </div>
+    </div>
+    <!--/ContentFormatting-->
+
+
+</template>
+
+
+
+<script>
+    
+    
+    var header = document.getElementById("header");
+    var header_height = header.offsetHeight;
+    var sidebar_container = document.getElementById("sidebar_container");
+    var sidebar_mode = "relative";
+
+
+    window.addEventListener('resize',()=>{//updates the header_height when window is resized
+        header_height = header.offsetHeight;
+        if(sidebar_mode=="relative"){
+            sidebar_container.style.top = String(header_height)+'px';
+        }
+    });
+
+
+
+    window.addEventListener('scroll',()=>{//do not directly do these changes for every single scroll event because that takes up a lot of resources. Check like maybe once every 3 scroll events or something?
+        var scrollpixels = window.scrollY;
+        if(window.innerWidth > 550){ //if screen width is smaller than 550px, then switch to popup menu and disable this!
+            if (scrollpixels > header_height && sidebar_mode=="relative"){
+                sidebar_container.classList.add("fix_sidebar");
+                sidebar_container.style.top = '0px';
+                sidebar_mode = "fixed";
+            }else if (scrollpixels < header_height && sidebar_mode=="fixed"){
+                sidebar_container.classList.remove("fix_sidebar");
+                sidebar_container.style.top = String(header_height)+'px';
+                sidebar_mode = "relative";
+        }
+           }
+
+    });
+    
+    selectActiveSidebarLink();
+    
+    
+    function selectActiveSidebarLink(){
+        var pathname = window.location.pathname; 
+        var pages =["/home.html", "/course-content.html", "/points.html", "/about-me.html", "/faqs.html"];
+        var links = document.getElementsByClassName("menu-list")[0].childNodes.item;
+        console.log(links);
+        pages.forEach(function(page) {
+            if(pathname == page){
+                document.getElementById(page).classList.add("active");
+            } 
+        });
+    }
+            
+        
+</script>
+    
+<style>
+    #header{
+    text-align: center;
+    padding-right: 10vw;
+}
+
+#sidebar_container{
+    top:131px;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #F1f1FF;  
+    border-radius: 20px;
+    margin-left:0;
+    position: relative;
+    top: -20px;
+    padding: 2%;
+}
+
+.sidebar a { 
+    text-align:center;
+    font-size: 100%;
+    transition: top 1s; /* to smooth out the bumpiness of the transition*/
+}
+
+.sidebar a.active {
+    background-color: #363636;
+    color: white;
+    //border-radius: 20px;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+.fix_sidebar{
+    position: fixed;
+    width: 100%;
+}
+
+
+
+/*if screen width is smaller than 550px, then switch to popup menu!*/
+@media screen and (max-width: 550px) {   
+    .sidebar{
+        display:none !important;
+    }
+}
+
+
+
+</style>
+    

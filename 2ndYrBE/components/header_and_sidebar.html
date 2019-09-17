@@ -100,9 +100,8 @@
         var pathname = window.location.pathname; 
         var pages =["/home.html", "/course-content.html", "/points.html", "/about-me.html", "/faqs.html"];
         var links = document.getElementsByClassName("menu-list")[0].childNodes.item;
-        console.log(links);
         pages.forEach(function(page) {
-            if(pathname == page){
+            if(pathname.includes(page)){
                 document.getElementById(page).classList.add("active");
             } 
         });

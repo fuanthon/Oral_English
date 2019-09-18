@@ -1,0 +1,137 @@
+
+Put the schedule as a link instead of an iframe 
+schedule, powerpoint, "course content," expectations, etc should have its own submenu options on page
+Potentially change Points page name to Assignments?
+Home under announcements put things we're doing next week and new vocab
+Student login to see grade/points/progress thing
+
+Use AJAX to load webpages instead of reloading each page!!! Especially because Github servers are in the US? and loading times can be slow in China...
+
+
+
+
+put "powerpoint" section under "course content"
+put "contact info" section under "about me"
+
+add transition for site_header to move further off screen so that it doesn't
+peak in while the text wraps around. So move fixed menu, but also move site_header!
+Workaround by having text shrink with viewport width as window minimizes as webpage enters popup mode
+
+
+
+at first, without any scrolling, keep the sidebar and the header as part of the document. Then, as the header disappears, make the sidebar fixed!!!?!?!
+
+
+
+add burger and dropdown menu two mobile version of website 
+
+
+
+
+
+
+<!--Content to Add to Website-->
+Home
+List of vocab words for next class period
+key things we learned from previous class
+
+Course Content
+Powerpoint's for each week that we have already covered
+Upcoming topics
+
+
+
+
+Points?
+Grading system
+most recent "quests"
+
+For  2ndYrBE
+Rank C: Watch video that I will post on website, and write a review in either formal or casual English (at least 200 words)
+Rank B: Watch video, and write both formal and casual review (at least words each)
+Rank A: Getting to know you lunch. Have lunch together! I want to get to know all of you!?
+
+Submit to fua21265@yahoo.co.jp with the following format:
+
+2ndYrBE - Name(English and Chinese), Quest#
+failure to follow this format will result in me not grading it and you not receiving any points
+
+
+
+
+
+
+About Me
+After graduating from Grinnell College with degrees in Music and Physics, Anthony (Tony) entered the Peace Corps where he serves as a volunteer of the 25th cohort in China teaching Oral English. His academic interests include the gamification of learning and exploring different approaches to making education more diverse and inclusive. As such, he is an avid learner who is open to new ideas and hopes to continually expand his skillset to gain new perspectives on the field of education. 
+
+His hobbies mainly include video games, animation, music, and cooking. Most recently, he can be found playing Persona 3 and games from the Fire Emblem series, watching Violet Evergarden, and listening to the soundtrack and songs of the RWBY series. 
+
+contact me at my email: fua21265@yahoo.co.jp
+
+
+Faq's
+S: Teacher, how can I improve my English?
+T: Well, it is very difficult for anyone to improve their English not only because of the many elements that comprise the English language, but also because of the fact that language is an ever-changing phenomena! Therefore, we should first consider what English skills we want to improve on; For example, it could be speaking or listening. But how we practice these aspects of English is also heavily affected by what our final goal is for improving that certain aspect. In order to create a suitable strategy for improving our English, I suggest we think about the following questions:
+"What English skills do I want to improve on?"
+"Why do I want to improve on these English skills?" or "What do I want to be able to do with these English skills?" 
+
+TL;DR (too long; didn't read)
+English is hard and there are too many things to learn. So, identify what we want to do with English first, because what we want to do will change how we study. 
+
+
+Common English Skills to Improve
+Conversational Speaking
+Conversational Listening
+Recreational Reading
+Recreational Writing
+
+
+S: Teacher, do you have any recommended tools to use for studying English?
+T: Yes! I myself use the application "Anki," which is a very helpful for memorizing all sorts of things, including vocabulary words. Anki has helped me increased my Chinese and Japanese vocabulary and I highly recommend it!
+
+
+I would also recommend finding a good English book, movie, tv show, or video game to enjoy, which can help with English language immersion. It is a good way to do something you enjoy while learning English! Here are some of my recommendations for media (most of which I grew up with lol):
+
+Books
+Magic Treehouse Series
+Harry Potter Series
+Alex Rider Series
+Warriors Series
+Boxcar Children Series
+etc etc
+
+Movies
+Any Disney Movie
+Any Studio Ghibli Movie
+Any Marvel Movie
+Any DC Comics Movie
+
+TV Show
+Andi Mack
+ICarly
+Jonas Bros
+Wizards of Waverly Place
+Arthur
+Word Girl
+Martha the Talking Dog
+Thomas the Tank Engine
+
+Video Games (should have text, not just gameplay)
+Life is Strange
+Ace Attorney
+Professor Layton
+Animal Crossing
+Visual Novels
+Traditional RPG's
+
+
+If you have any recommendations yourselves, please let me know so that I can add it to this page!
+
+
+Or English translations of anything you enjoy that is not originally in English!
+
+
+
+
+
+

@@ -1,4 +1,0 @@
-Access-Control-Allow-Origin: /Users/Fua/Projects/PC_Chengdu_Polytechnic/Oral_English_Website/1stYrBE/home.html
-
-
-hello!

@@ -16,23 +16,36 @@
 
             <div class="navbar-menu"> <!--add is-active to display contents-->
                 <div class="navbar-start ">
-                    <a class="navbar-item" href="home.html">
+                    <a class="navbar-item" href="/Oral_English/1stYrBE/home.html">
                         Home
                     </a>
 
-                    <a class="navbar-item" href="course-content.html">
+                    <a class="navbar-item" href="/Oral_English/1stYrBE/course-content.html">
                         Course Content
                     </a>
         
-                    <a class="navbar-item" href="points.html">
-                        Points
+                    <a class="navbar-item" id="points_mobile">
+                        Points <i class="fa fa-caret-down"></i>
                     </a>
                     
-                    <a class="navbar-item" href="about-me.html">
+                    <div class="indent" id="points_dropdown_submenu_mobile">
+                        <a class="navbar-item" href="/Oral_English/1stYrBE/points/class1.html">Class 1</a>
+                        <a class ="navbar-item" href="/Oral_English/1stYrBE/points/class2.html">Class 2</a>
+                        <a class ="navbar-item" href="/Oral_English/1stYrBE/points/class3.html">Class 3</a>
+                        <a class ="navbar-item" href="/Oral_English/1stYrBE/points/class4.html">Class 4</a>
+                        <a class ="navbar-item" href="/Oral_English/1stYrBE/points/class5.html">Class 5</a>
+                    </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <a class="navbar-item" href="/Oral_English/1stYrBE/about-me.html">
                         About Me
                     </a>
                     
-                    <a class="navbar-item" href="faqs.html">
+                    <a class="navbar-item" href="/Oral_English/1stYrBE/faqs.html">
                         FAQs
                     </a>
 
@@ -86,4 +99,16 @@
             navbar_menu.classList.add("is-active");
         }
     }
+    
+    
+    var points_dropdown_submenu_mobile = document.getElementById("points_dropdown_submenu_mobile");
+    var points_mobile = document.getElementById("points_mobile");
+    points_dropdown_submenu_mobile.style.display ="none";
+    points_mobile.addEventListener('click', ()=>{
+        if(points_dropdown_submenu_mobile.style.display == "none"){
+            points_dropdown_submenu_mobile.style.display = "block";
+        }else{
+            points_dropdown_submenu_mobile.style.display = "none"
+        }
+    });
 </script>

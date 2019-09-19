@@ -1,7 +1,7 @@
 
 window.onload = function (){
-    var mobilenavbarpath = "components/mobilenavbar.html";
-    var header_and_sidebarpath = "components/header_and_sidebar.html";
+    var mobilenavbarpath = "/Oral_English/1stYrBE/components/mobilenavbar.html";
+    var header_and_sidebarpath = "/Oral_English/1stYrBE/components/header_and_sidebar.html";
     window.loadComponent(mobilenavbarpath).then(function(result){
         
         //Add CSS for navbar for mobile

@@ -31,11 +31,23 @@
                 <div class="section is-marginless is-overlay" id="sidebar_container">
                     <aside class="menu sidebar">
                     <ul class="menu-list">
-                        <li><a href="home.html" id="/home.html">Home</a></li>
-                        <li><a href="course-content.html" id="/course-content.html">Course Content</a></li>
-                        <li><a href="points.html" id="/points.html">Points</a></li>
-                        <li><a href="about-me.html" id="/about-me.html">About Me</a></li>
-                        <li><a href="faqs.html" id="/faqs.html">FAQs</a></li>
+                        <li><a href="/Oral_English/1stYrBE/home.html" id="/home.html">Home</a></li>
+                        <li><a href="/Oral_English/1stYrBE/course-content.html" id="/1stYrBe/course-content.html">Course Content</a></li>
+                        <li><a id="points">Points <i class="fa fa-caret-down"></i></a>
+                        </li>
+                        <li>
+                            <ul id="points_dropdown_submenu">
+                                <li><a href="/Oral_English/1stYrBE/points/class1.html">Class 1</a></li>
+                                <li><a href="/Oral_English/1stYrBE/points/class2.html">Class 2</a></li>
+                                <li><a href="/Oral_English/1stYrBE/points/class3.html">Class 3</a></li>
+                                <li><a href="/Oral_English/1stYrBE/points/class4.html">Class 4</a></li>
+                                <li><a href="/Oral_English/1stYrBE/points/class5.html">Class 5</a></li>
+                            </ul>
+                            
+                        
+                        </li>
+                        <li><a href="/Oral_English/1stYrBE/about-me.html" id="/about-me.html">About Me</a></li>
+                        <li><a href="/Oral_English/1stYrBE/faqs.html" id="/faqs.html">FAQs</a></li>
 
                     </ul>
                 </aside>
@@ -66,6 +78,8 @@
     var header_height = header.offsetHeight;
     var sidebar_container = document.getElementById("sidebar_container");
     var sidebar_mode = "relative";
+    var points_dropdown = document.getElementById("points");
+    var points_dropdown_submenu = document.getElementById("points_dropdown_submenu");
 
 
     window.addEventListener('resize',()=>{//updates the header_height when window is resized
@@ -93,18 +107,28 @@
 
     });
     
+    
+    points_dropdown_submenu.style.display ="none";
+    points_dropdown.addEventListener('click', ()=>{
+        if(points_dropdown_submenu.style.display == "none"){
+            points_dropdown_submenu.style.display = "block";
+        }else{
+            points_dropdown_submenu.style.display = "none"
+        }
+    });
+    
     selectActiveSidebarLink();
-    
-    
     function selectActiveSidebarLink(){
         var pathname = window.location.pathname; 
-        var pages =["/home.html", "/course-content.html", "/points.html", "/about-me.html", "/faqs.html"];
+        var pages =["/home.html", "/course-content.html", "points", "/about-me.html", "/faqs.html"];
         var links = document.getElementsByClassName("menu-list")[0].childNodes.item;
         pages.forEach(function(page) {
+            console.log(page);
             if(pathname.includes(page)){
                 document.getElementById(page).classList.add("active");
             } 
         });
+       
     }
             
         
@@ -116,53 +140,53 @@
     padding-right: 10vw;
     background-color: lightcoral;
     background-color:rgb(255,200,255);
-}
-
-#sidebar_container{
-    top:131px;
-}
-
-.sidebar {
-    width: 20%;
-    background-color: #F1f1FF;  
-    border-radius: 20px;
-    margin-left:0;
-    position: relative;
-    top: -20px;
-    padding: 2%;
-}
-
-.sidebar a { 
-    text-align:center;
-    font-size: 100%;
-    transition: top 1s; /* to smooth out the bumpiness of the transition*/
-}
-
-.sidebar a.active {
-    background-color: #363636;
-    color: white;
-    //border-radius: 20px;
-}
-
-/* Links on mouse-over */
-.sidebar a:hover:not(.active) {
-    background-color: #555;
-    color: white;
-}
-
-.fix_sidebar{
-    position: fixed;
-    width: 100%;
-}
-
-
-
-/*if screen width is smaller than 550px, then switch to popup menu!*/
-@media screen and (max-width: 550px) {   
-    .sidebar{
-        display:none !important;
     }
-}
+
+    #sidebar_container{
+        top:131px;
+    }
+
+    .sidebar {
+        width: 20%;
+        background-color: #F1f1FF;  
+        border-radius: 20px;
+        margin-left:0;
+        position: relative;
+        top: -20px;
+        padding: 2%;
+    }
+
+    .sidebar a { 
+        text-align:center;
+        font-size: 100%;
+        transition: top 1s; /* to smooth out the bumpiness of the transition*/
+    }
+
+    .sidebar a.active {
+        background-color: #363636;
+        color: white;
+    }
+
+    /* Links on mouse-over */
+    .sidebar a:hover:not(.active) {
+        background-color: #555;
+        color: white;
+    }
+    
+
+    .fix_sidebar{
+        position: fixed;
+        width: 100%;
+    }
+
+
+
+    /*if screen width is smaller than 550px, then switch to popup menu!*/
+    @media screen and (max-width: 550px) {   
+        .sidebar{
+            display:none !important;
+        }
+    }
 
 
 

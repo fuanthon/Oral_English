@@ -1,0 +1,37 @@
+
+
+.indent{
+    text-indent: 30px;
+}
+
+.justify{
+    text-align: justify;
+}
+
+
+#schedulepdf a{
+    display:none;
+}
+
+/*if screen width is smaller than 550px, then switch to popup menu!*/
+@media screen and (max-width: 550px) {   
+    .title{
+        font-size: 6vw;
+    }
+    #oral_english{
+        font-size: 6vw;
+    }
+    #oral_english_sub{
+        font-size:4vw;
+    }
+    
+    #schedulepdf embed{
+        display:none;
+    }
+    
+    #schedulepdf a{
+    display:block;
+}
+}
+
+

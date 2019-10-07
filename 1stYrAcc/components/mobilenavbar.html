@@ -24,15 +24,10 @@
                         Course Content
                     </a>
         
-                    <a class="navbar-item" id="points_mobile">
-                        Points <i class="fa fa-caret-down"></i>
+                    <a class="navbar-item" href="points.html" id="points_mobile">
+                        Points
                     </a>
-                    
-                    <div class="indent" id="points_dropdown_submenu_mobile">
-                        <a class="navbar-item" href="points-class1.html">Class 1</a>
-                        <a class ="navbar-item" href="points-class2.html">Class 2</a>
-                    </div>
-                    
+                        
                     
                     
                     
@@ -77,12 +72,6 @@
     var burger_button = document.querySelector('[role="button"]:last-of-type');
     var navbar_menu = document.getElementsByClassName("navbar-menu")[0];
 
-    /*
-    document.addEventListener('click',(e)=>{
-        if(e.target.classList[1] == 'burger'){
-            burgerClicked(e);
-        }
-    });*/
     
      burger_button.addEventListener('click', burgerClicked);
     
@@ -97,15 +86,4 @@
         }
     }
     
-    
-    var points_dropdown_submenu_mobile = document.getElementById("points_dropdown_submenu_mobile");
-    var points_mobile = document.getElementById("points_mobile");
-    points_dropdown_submenu_mobile.style.display ="none";
-    points_mobile.addEventListener('click', ()=>{
-        if(points_dropdown_submenu_mobile.style.display == "none"){
-            points_dropdown_submenu_mobile.style.display = "block";
-        }else{
-            points_dropdown_submenu_mobile.style.display = "none"
-        }
-    });
 </script>

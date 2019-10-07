@@ -33,15 +33,7 @@
                     <ul class="menu-list">
                         <li><a href="home.html" id="/home.html">Home</a></li>
                         <li><a href="course-content.html" id="/course-content.html">Course Content</a></li>
-                        <li><a id="points">Points <i class="fa fa-caret-down"></i></a>
-                        </li>
-                        <li>
-                            <ul id="points_dropdown_submenu">
-                                <li><a href="points-class1.html">Class 1</a></li>
-                                <li><a href="points-class2.html">Class 2</a></li>
-                            </ul>
-                            
-                        
+                        <li><a href="points.html" id="points">Points</a>
                         </li>
                         <li><a href="about-me.html" id="/about-me.html">About Me</a></li>
                         <li><a href="faqs.html" id="/faqs.html">FAQs</a></li>
@@ -104,15 +96,6 @@
 
     });
     
-    
-    points_dropdown_submenu.style.display ="none";
-    points_dropdown.addEventListener('click', ()=>{
-        if(points_dropdown_submenu.style.display == "none"){
-            points_dropdown_submenu.style.display = "block";
-        }else{
-            points_dropdown_submenu.style.display = "none"
-        }
-    });
     
     selectActiveSidebarLink();
     function selectActiveSidebarLink(){
